@@ -10,16 +10,16 @@
     </settings>
 
 	<typeAliases>
-		<typeAlias type="com.fh.entity.system.User" alias="User"/>
-		<typeAlias type="com.fh.entity.system.Role" alias="Role"/>
-		<typeAlias type="com.fh.entity.system.Menu" alias="Menu"/>
-		<typeAlias type="com.fh.util.PageData" alias="pd"/>
+		<typeAlias type="com.shp.entity.system.User" alias="User"/>
+		<typeAlias type="com.shp.entity.system.Role" alias="Role"/>
+		<typeAlias type="com.shp.entity.system.Menu" alias="Menu"/>
+		<typeAlias type="com.shp.common.util.PageData" alias="pd"/>
 		<!-- 分页 -->
-		<typeAlias type="com.fh.entity.Page" alias="Page"/>
+		<typeAlias type="com.shp.entity.Page" alias="Page"/>
 	</typeAliases>
 	
 	<plugins>
-		<plugin interceptor="com.fh.plugin.PagePlugin">
+		<plugin interceptor="com.shp.plugin.PagePlugin">
 			<property name="dialect" value="mysql"/>
 			<property name="pageSqlId" value=".*listPage.*"/>
 		</plugin>

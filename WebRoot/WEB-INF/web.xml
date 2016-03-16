@@ -6,7 +6,7 @@
 		
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath:spring/ApplicationContext.xml</param-value>
+		<param-value>classpath:spring/spring-common.xml</param-value>
 	</context-param>
 	<context-param>
 		<param-name>log4jConfigLocation</param-name>
@@ -50,7 +50,7 @@
 
 	<filter>
 		<filter-name>loginFilter</filter-name>
-		<filter-class>com.fh.filter.LoginFilter</filter-class>
+		<filter-class>com.shp.filter.LoginFilter</filter-class>
 	</filter>
 	<listener>
 		<listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
@@ -64,7 +64,7 @@
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
-			<param-value>classpath:spring/ApplicationContext-mvc.xml</param-value>
+			<param-value>classpath:spring/spring-mvc.xml</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
@@ -76,7 +76,7 @@
 	<!-- tomcat等 启动之前执行 -->
 	<filter>
 		<filter-name>startFilter</filter-name>
-		<filter-class>com.fh.filter.startFilter</filter-class>
+		<filter-class>com.shp.filter.startFilter</filter-class>
 	</filter>
 	
 	<!-- Shiro filter start -->
