@@ -1,8 +1,8 @@
-/.settings/
+#/.settings/#
 /.myeclipse/
 *.class
-*.project
-*.classpath
+#*.project#
+#*.classpath#
 # Package Files #
 *.war
 *.ear
